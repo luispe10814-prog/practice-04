@@ -1,0 +1,8 @@
+name: test build
+on: [push, workflow_dispatch]
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+        run: npm lint    
